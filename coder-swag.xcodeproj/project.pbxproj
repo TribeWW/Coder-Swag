@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E465AE6A24071EEA00C00B96 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = E465AE6924071EEA00C00B96 /* Category.swift */; };
+		E465AE6D240721CD00C00B96 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E465AE6C240721CD00C00B96 /* DataService.swift */; };
 		E49B945423F7ED4800A3ACAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49B945323F7ED4800A3ACAB /* AppDelegate.swift */; };
 		E49B945623F7ED4800A3ACAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49B945523F7ED4800A3ACAB /* SceneDelegate.swift */; };
 		E49B945823F7ED4800A3ACAB /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49B945723F7ED4800A3ACAB /* CategoriesVC.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E465AE6924071EEA00C00B96 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		E465AE6C240721CD00C00B96 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		E49B945023F7ED4800A3ACAB /* coder-swag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "coder-swag.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E49B945323F7ED4800A3ACAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E49B945523F7ED4800A3ACAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E465AE6B240721A500C00B96 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E465AE6C240721CD00C00B96 /* DataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		E49B944723F7ED4800A3ACAB = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +70,7 @@
 		E49B945223F7ED4800A3ACAB /* coder-swag */ = {
 			isa = PBXGroup;
 			children = (
+				E465AE6B240721A500C00B96 /* Services */,
 				E49B946923F839D600A3ACAB /* View */,
 				E49B946823F839C100A3ACAB /* Model */,
 				E49B946723F839A500A3ACAB /* Controller */,
@@ -82,6 +95,7 @@
 		E49B946823F839C100A3ACAB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E465AE6924071EEA00C00B96 /* Category.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -166,7 +180,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E49B945823F7ED4800A3ACAB /* CategoriesVC.swift in Sources */,
+				E465AE6A24071EEA00C00B96 /* Category.swift in Sources */,
 				E49B945423F7ED4800A3ACAB /* AppDelegate.swift in Sources */,
+				E465AE6D240721CD00C00B96 /* DataService.swift in Sources */,
 				E49B945623F7ED4800A3ACAB /* SceneDelegate.swift in Sources */,
 				E49B946B23F83B3700A3ACAB /* CategoryCell.swift in Sources */,
 			);
