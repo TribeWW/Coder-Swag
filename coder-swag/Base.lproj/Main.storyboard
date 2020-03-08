@@ -78,17 +78,17 @@
                     <navigationItem key="navigationItem" title="CODER SWAG" id="cuI-Bk-OMi"/>
                     <connections>
                         <outlet property="categoryTable" destination="MNo-Fr-l5a" id="PdK-7q-anD"/>
-                        <segue destination="i42-Y8-Bgn" kind="show" id="W2j-9O-d5G"/>
+                        <segue destination="i42-Y8-Bgn" kind="show" identifier="ProductsVC" id="W2j-9O-d5G"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1071.2" y="116.49175412293854"/>
         </scene>
-        <!--View Controller-->
+        <!--ProductsVC-->
         <scene sceneID="6sk-i1-BwJ">
             <objects>
-                <viewController id="i42-Y8-Bgn" sceneMemberID="viewController">
+                <viewController id="i42-Y8-Bgn" customClass="ProductsVC" customModule="coder_swag" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bTq-gD-cd8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -113,7 +113,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Z4h-YI-Joh" customClass="ProductCell" customModule="coder_swag" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCell" id="Z4h-YI-Joh" customClass="ProductCell" customModule="coder_swag" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="178" height="277"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Gka-AA-xta">
@@ -123,6 +123,8 @@
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shirt01" translatesAutoresizingMaskIntoConstraints="NO" id="z2Z-fs-k2h">
                                                     <rect key="frame" x="0.0" y="0.0" width="178" height="178"/>
                                                     <constraints>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="178" id="eM0-YO-46k"/>
+                                                        <constraint firstAttribute="width" constant="178" id="nLb-rp-UrI"/>
                                                         <constraint firstAttribute="height" constant="178" id="qWy-YS-qoe"/>
                                                     </constraints>
                                                 </imageView>
@@ -150,6 +152,7 @@
                                                 <constraint firstItem="z2Z-fs-k2h" firstAttribute="leading" secondItem="Gka-AA-xta" secondAttribute="leading" id="bOD-2b-CKF"/>
                                                 <constraint firstItem="z2Z-fs-k2h" firstAttribute="top" secondItem="Gka-AA-xta" secondAttribute="top" id="dgc-kC-SFO"/>
                                                 <constraint firstAttribute="trailing" secondItem="z2Z-fs-k2h" secondAttribute="trailing" id="f6D-YR-rQL"/>
+                                                <constraint firstAttribute="trailing" secondItem="z2Z-fs-k2h" secondAttribute="trailing" id="hEx-77-Stc"/>
                                                 <constraint firstItem="BxC-3U-yu4" firstAttribute="leading" secondItem="Gka-AA-xta" secondAttribute="leadingMargin" id="i40-36-6Uw"/>
                                                 <constraint firstAttribute="trailing" secondItem="BxC-3U-yu4" secondAttribute="trailing" id="jdn-PS-afT"/>
                                                 <constraint firstItem="BxC-3U-yu4" firstAttribute="top" secondItem="z2Z-fs-k2h" secondAttribute="bottom" constant="9" id="rjP-Gn-kZ2"/>
@@ -179,6 +182,9 @@
                         <viewLayoutGuide key="safeArea" id="cbh-fO-PWg"/>
                     </view>
                     <navigationItem key="navigationItem" id="taT-In-2uM"/>
+                    <connections>
+                        <outlet property="productsCollection" destination="UhW-EK-BEl" id="H3m-7f-6bc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0C5-80-P5L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
